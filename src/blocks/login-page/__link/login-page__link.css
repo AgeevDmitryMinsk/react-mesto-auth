@@ -1,0 +1,28 @@
+.login-page__link {
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: overline;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.login-page__link:hover {
+  opacity: 0.6;
+}
+.login-page__link:visited {
+  color: #8a8a8a;
+}
+.login-page__link:active {
+  transform: scale(1.02 , 1.02);
+  -webkit-transform: scale(1.02 , 1.02);
+  -moz-transform: scale(1.02 , 1.02);
+  -ms-transform: scale(1.02 , 1.02);
+  -o-transform: scale(1.02 , 1.02);
+}

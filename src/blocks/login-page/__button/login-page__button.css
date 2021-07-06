@@ -1,0 +1,19 @@
+.login-page__button {
+  border: 0;
+  padding: 0;
+  height: 50px;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+  cursor: pointer;
+  transition: opacity .3s ease;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -ms-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+}
+
+.login-page__button:hover {
+  opacity: .85;
+}

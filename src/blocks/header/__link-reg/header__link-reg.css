@@ -1,0 +1,24 @@
+.header__link-reg {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 51px 0 46px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.header__link-reg:hover {
+  opacity: 0.6;
+}
+.header__link-reg:visited {
+  color: royalblue;
+}
+.header__link-reg:active {
+  transform: scale(1.02 , 1.02);
+  -webkit-transform: scale(1.02 , 1.02);
+  -moz-transform: scale(1.02 , 1.02);
+  -ms-transform: scale(1.02 , 1.02);
+  -o-transform: scale(1.02 , 1.02);
+}

@@ -1,0 +1,12 @@
+.popup__condition-container {
+  width: 430px;
+  margin: auto;
+  padding: 60px 36px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+}
