@@ -42,5 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://ageevdmitryminsk.github.io/react-mesto-auth"
+  "homepage": "https://ageevdmitryminsk.github.io/react-mesto-auth",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
 }

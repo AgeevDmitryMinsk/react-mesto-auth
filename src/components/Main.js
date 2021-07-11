@@ -4,7 +4,15 @@ import "../index.css";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 export default Main;
 function Main(props) {
-  const { onEditAvatar, onAddPlace, onEditProfile, onCardClick, onCardLike, onCardDelete, cards } = props;
+  const {
+    onEditAvatar,
+    onAddPlace,
+    onEditProfile,
+    onCardClick,
+    onCardLike,
+    onCardDelete,
+    cards,
+  } = props;
   const currentUser = React.useContext(CurrentUserContext);
 
   return (
@@ -24,14 +32,16 @@ function Main(props) {
             <button
               className="profile__button-edit"
               type="button"
-              onClick={onEditProfile}></button>
+              onClick={onEditProfile}
+            ></button>
           </div>
           <p className="profile__subtitle">{currentUser.about}</p>
         </div>
         <button
           className="profile__button-add"
           type="button"
-          onClick={onAddPlace}></button>
+          onClick={onAddPlace}
+        ></button>
       </section>
       <section className="pictures">
         {cards.map((card) => (

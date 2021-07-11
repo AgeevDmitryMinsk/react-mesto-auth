@@ -1,6 +1,8 @@
-import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import React              from "react";
+import {Link, withRouter} from "react-router-dom";
+
 export default withRouter(Register);
+
 function Register(props) {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -32,7 +34,8 @@ function Register(props) {
           placeholder="Email"
           required
           onChange={handleEmailChange}
-          value={email}></input>
+          value={email}
+        />
         <input
           className="login-page__inputs"
           type="password"
@@ -41,7 +44,8 @@ function Register(props) {
           required
           minLength="6"
           onChange={handlePasswordChange}
-          value={password}></input>
+          value={password}
+        />
         <button className="login-page__button" type="submit">
           Зарегистрироваться
         </button>

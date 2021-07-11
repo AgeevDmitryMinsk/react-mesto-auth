@@ -9,22 +9,23 @@ function Header(props) {
   return (
     <header className="header page__header">
       <img src={logo} alt="Логотип сайта" className="header__logo" />
-        {props.loggedIn ? (
-          <>
-            <span className="header__email">{props.email}</span>
-            <Link
-              className="header__link-reg"
-              to="/"
-              style={{ color: "#A9A9A9" }}
-              onClick={props.onSignOut}>
-              Выйти
-            </Link>
-          </>
-        ) : (
-          <Link className="header__link-reg" to={path}>
-            {title}
+      {props.loggedIn ? (
+        <>
+          <span className="header__email">{props.email}</span>
+          <Link
+            className="header__link-reg"
+            to="/"
+            style={{ color: "#A9A9A9" }}
+            onClick={props.onSignOut}
+          >
+            Выйти
           </Link>
-        )}
+        </>
+      ) : (
+        <Link className="header__link-reg" to={path}>
+          {title}
+        </Link>
+      )}
     </header>
   );
 }

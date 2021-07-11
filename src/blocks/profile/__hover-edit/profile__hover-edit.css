@@ -1,4 +1,3 @@
-
 .profile__hover-edit {
   position: absolute;
   top: 0;
@@ -8,12 +7,12 @@
   height: 120px;
   border-radius: 50%;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .profile__hover-edit:hover {
-    background-image: url("../../../images/penavatar.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: fill;
-    background-color: rgba(0, 0, 0, 0.522);
+  background-image: url("../../../images/penavatar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: fill;
+  background-color: rgba(0, 0, 0, 0.522);
 }

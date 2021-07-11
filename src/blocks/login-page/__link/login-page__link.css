@@ -20,9 +20,9 @@
   color: #8a8a8a;
 }
 .login-page__link:active {
-  transform: scale(1.02 , 1.02);
-  -webkit-transform: scale(1.02 , 1.02);
-  -moz-transform: scale(1.02 , 1.02);
-  -ms-transform: scale(1.02 , 1.02);
-  -o-transform: scale(1.02 , 1.02);
+  transform: scale(1.02, 1.02);
+  -webkit-transform: scale(1.02, 1.02);
+  -moz-transform: scale(1.02, 1.02);
+  -ms-transform: scale(1.02, 1.02);
+  -o-transform: scale(1.02, 1.02);
 }

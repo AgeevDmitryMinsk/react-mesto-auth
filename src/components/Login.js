@@ -30,7 +30,8 @@ function Login(props) {
           placeholder="Email"
           required
           onChange={handleEmailChange}
-          value={email}></input>
+          value={email}
+        ></input>
         <input
           className="login-page__inputs"
           type="password"
@@ -39,7 +40,8 @@ function Login(props) {
           required
           minLength="6"
           onChange={handlePasswordChange}
-          value={password}></input>
+          value={password}
+        ></input>
         <button className="login-page__button" type="submit">
           Войти
         </button>

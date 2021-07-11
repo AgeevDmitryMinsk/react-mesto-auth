@@ -4,8 +4,7 @@ import fail from "../images/fail.svg";
 export default InfoTooltip;
 function InfoTooltip(props) {
   return (
-    <div
-      className={`popup ${props.isOpen ? "popup__opened" : ""}`}>
+    <div className={`popup ${props.isOpen ? "popup__opened" : ""}`}>
       <div className="popup__condition-container">
         <img
           className="popup__condition-image"
@@ -20,7 +19,8 @@ function InfoTooltip(props) {
         <button
           className="popup__close"
           type="reset"
-          onClick={props.onClose}></button>
+          onClick={props.onClose}
+        ></button>
       </div>
     </div>
   );

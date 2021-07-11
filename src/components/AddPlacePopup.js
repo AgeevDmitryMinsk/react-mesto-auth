@@ -1,19 +1,25 @@
-import React from "react";
+import React         from "react";
 import PopupWithForm from "./PopupWithForm";
+
 export default AddPlacePopup;
-function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading2 }) {
+
+function AddPlacePopup({isOpen, onClose, onAddPlace, isLoading2}) {
   const [name, setName] = React.useState("");
   const [link, setLink] = React.useState("");
-  React.useEffect(_ => {
-    setName('');
-    setLink('');
-  }, [isOpen]);
+  React.useEffect(
+    () => {
+      setName("");
+      setLink("");
+    },
+    [isOpen]
+  );
+
   function handleSubmit(evt) {
     evt.preventDefault();
     onAddPlace({
-      name: name,
-      link: link,
-    });
+                 name: name,
+                 link: link,
+               });
   }
 
   function handleChangeName(evt) {
@@ -32,7 +38,8 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading2 }) {
       isLoading2={isLoading2}
       isOpen={isOpen}
       onClose={onClose}
-      handleSubmit={handleSubmit}>
+      onSubmit={handleSubmit}
+    >
       <input
         type="text"
         className="popup-creat__input-text popup-creat__input-name"

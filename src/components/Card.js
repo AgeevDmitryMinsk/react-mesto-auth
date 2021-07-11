@@ -41,13 +41,15 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
             <button
               className={cardLikeButtonClassName}
               type="button"
-              onClick={handleLikeClick}></button>
+              onClick={handleLikeClick}
+            ></button>
             <span className="cards__likes">{card.likes.length}</span>
           </div>
           <button
             className={cardDeleteButtonClassName}
             type="button"
-            onClick={handleCardDelete}></button>
+            onClick={handleCardDelete}
+          ></button>
         </div>
       </article>
     </div>
